@@ -1,0 +1,157 @@
+// Place your key bindings in this file to override the defaults
+[
+    // ctrl + f2                같은 단어 커서온
+    // alt + up/down            이동
+    // alt + shitf up/down      복사
+    // ctrl + click             동일 문자열 편집
+    // alt + click              불연속 선택(마지막)
+    // alt + shitf + i          연속 선택(마지막)
+    // alt + shitf + drag       드래그로 선택
+    // ctrl + /                 전체 주석처리
+
+    // ctrl + num               Focus 화면 (0:메뉴)
+    // ctrl + T                 터미널 포커싱
+    // ctrl + J                 터미널 숨기기
+
+    // ctrl + shift + [         선택영역 접기
+    // ctrl + shift + ]         선택영역 열기
+
+    // ctrl + +                 화면 크게
+    // ctrl + -                 화면 작게
+
+    // ctrl + p                 모든 스크립트
+    // chtl + shift + tab       해당 편집기 그룹내 스크립트 검색
+    // chtl + num               해당 그룹 이동
+
+
+    // ctrl + f2                커서와 동일한 단어 모두 선택
+    // ctrl + d                 커서의 단어 선택 + 반복시 추가 선택!!
+
+    // ctrl + c                 실행 멈춤
+
+    // ctrl + shift + k         커서 라인 삭제
+    // ctrl + shift + e         View 익스플로러
+    // ctrl + shift + c         CMD
+    // ctrl + shift + .         스크립트에서 오브젝트 검색
+
+    // shift + enter            Python Run Selected (REPL)
+
+    // <Code Runner>
+    // ctrl + alt + n           Run
+    // ctrl + alt + m           Stop
+
+    // <<side bar>>
+    // ctrl + alt + d           새폴더
+    // ctrl + alt + f           새파일
+
+    // <<next tap>>
+    // ctrl + page up           다음 텝/Editor
+    // ctrl + page down         이전 텝/Editor
+
+    // <<search object>>
+    // ctrl + shift + o         함수/변수 찾기
+
+    /* --------------------------------- Editor --------------------------------- */
+    // ctrl + enter             변수
+    {
+        "key": "shift+space",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    // {
+    //     "key": "space",
+    //     "command": "closeParameterHints",
+    //     "when": "editorFocus && parameterHintsVisible"
+    // },
+    /* --------------------------------- Python --------------------------------- */
+    {
+        "key": "ctrl+shift+a",
+        "command": "python.execInTerminal"
+    },
+
+    /* -------------------------------- Side Bar -------------------------------- */
+    {
+        "key": "ctrl+alt+d",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "explorer.newFile"
+    },
+
+    //=========================================================== Code Runner
+    {   //  output clear
+        "key": "ctrl+alt+p",
+        "command": "workbench.output.action.clearOutput"
+    },
+    {   //  output activate
+        "key": "ctrl+alt+o",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    },
+
+    //=========================================================== terminal
+    // Terminal Activate
+    // "key": "ctrl+`",
+
+    {   //  Terminal Kill
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.kill",
+        "when": "!editorTextFocus"
+    },
+
+
+    //=========================================================== Jupyter
+    //[j][k][l]
+    {
+        "key": "ctrl+alt+j",
+        "command": "jupyter.createnewinteractive"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "jupyter.restartkernel"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "jupyter.removeallcells"
+
+    },
+
+    //=========================================================== New Liner
+    {//insertLineAfter
+        "key": "ctrl+oem_period",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {//(-key) insertLineAfter
+        "key": "ctrl+enter",
+        "command": "-editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {//insertLineBefore
+        "key": "ctrl+oem_comma",
+        "command": "editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {//(-key) insertLineBefore
+        "key": "ctrl+shift+enter",
+        "command": "-editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    {//hideSuggestWidget
+        "key": "ctrl+oem_7",
+        "command": "hideSuggestWidget",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+k f",
+        "command": "-workbench.action.closeFolder",
+        "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+    },
+
+]
