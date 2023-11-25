@@ -48,7 +48,7 @@
           "scrollbar.shadow": "#00000000",
           "scrollbarSlider.background":       "#5fb3b333",
           "scrollbarSlider.hoverBackground":  "#5fb3b344",
-          "scrollbarSlider.activeBackground": "#5fb3b355",   
+          "scrollbarSlider.activeBackground": "#5fb3b355"
                  
           // "editor.inactiveSelectionBackground": "#1494df",
           // "editor.lineHighlightBackground": "#5fb3b3",
@@ -68,7 +68,7 @@
     "vsicons.associations.folders": [
       {
           "icon":"",               // Icon Name . "" : default
-          "extensions":["layout","widgets","component","source"], // Folder Name
+          "extensions":["layout","widgets","component","source"] // Folder Name
       }
     ],
     "vsicons.presets.hideExplorerArrows": true,
@@ -78,6 +78,7 @@
     "terminal.integrated.defaultProfile.windows": "PowerShell",
 
     //================================================[파이썬]
+    "terminal.integrated.env.windows": {"PYTHONPATH":"${workspaceFolder}"}, //Run Python File : sys.path
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
@@ -104,7 +105,7 @@
         // "editor.formatOnType": true,
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.tabSize": 4,
-        "editor.insertSpaces": true,
+        "editor.insertSpaces": true
         // "editor.detectIndentation": false,
 
     },
@@ -210,13 +211,12 @@
           "backgroundColor": "transparent",
           "bold": false,
           "italic": false
-        },
+        }
       ],
       "git.openRepositoryInParentFolders": "never",
       "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
       "editor.matchBrackets": "never",
-      "window.zoomLevel": -1,
-
+      "window.zoomLevel": -1
 }
 // bg = "#1b2b34"
 // black = "#0f1c23"
