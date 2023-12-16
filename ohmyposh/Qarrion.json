@@ -62,7 +62,7 @@
               {
                   "type": "git",
                   // "template": "  ({{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }} {{ if .Staging.Changed }}|<#99c794> {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}|{{ end }}{{ if .Working.Changed }}<#ed6f7d> {{ .Working.String }}</>{{ end }}{{ if gt .StashCount 0 }}|  {{ .StashCount }}{{ end }})",
-                  "template": "  ({{if .UpstreamGone}}{{ .HEAD }}{{else}}{{.Upstream}}{{end}}) {{.BranchStatus }} {{ if .Staging.Changed }}(<#99c794> {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}|{{ end }}{{ if .Working.Changed }}<#ed6f7d> {{ .Working.String }}</>{{ end }}{{ if gt .StashCount 0 }}|  {{ .StashCount }}{{ end }}",
+                  "template": "  ({{if .UpstreamGone}}{{ .HEAD }}{{else}}{{.Upstream}}{{end}}) {{.BranchStatus }} {{ if .Staging.Changed }}<#99c794> {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}|{{ end }}{{ if .Working.Changed }}<#ed6f7d> {{ .Working.String }}</>{{ end }}{{ if gt .StashCount 0 }}|  {{ .StashCount }}{{ end }}",
 
                   "properties": {
                     "fetch_status":true, //.BranchStatus
