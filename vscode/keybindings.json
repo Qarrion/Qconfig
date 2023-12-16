@@ -32,7 +32,7 @@
     // ctrl + shift + k         커서 라인 삭제
     // ctrl + shift + e         View 익스플로러
     // ctrl + shift + c         CMD
-    // ctrl + shift + l         현재커서 같은 단어 선택 
+    // crtl + shift + l         현재커서 같은 단어 선택 
     // ctrl + shift + .         스크립트에서 오브젝트 검색
 
     // shift + enter            Python Run Selected (REPL)

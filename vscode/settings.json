@@ -1,222 +1,227 @@
 {
-    //================================================[폰트]
-    "editor.fontFamily": "CaskaydiaCove Nerd Font",
-    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-    //================================================[테마]
-    
-    // "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
-    // "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Cobalt Next Dark",
-    "editor.bracketPairColorization.enabled": true, // Native bracket matching - colors included in theme
-    "color-highlight.markerType": "underline",      // requires Color Highlight Extension
-    "color-highlight.markRuler": false,             // requires Color Highlight Extension
-    "editor.colorDecorators": false,                // using Color Hightlight instead
-    "editor.cursorBlinking": "solid",
-    "editor.cursorWidth": 4,
-    "editor.letterSpacing": 0.0,
-    // editor.lineHeight": 20,
-    //"editor.fontSize": 18,
-
-    // "files.trimTrailingWhitespace": true, // trim < markdown
-
-    "subtleBrackets.style": { // requires Subtle Match Bracket Extension
-      "global": {
-        "borderColor": "#fac863",
-        "borderWidth": "2px"
-      }
-    },
-    // https://code.visualstudio.com/api/references/theme-color#notebook-colors
-    "workbench.colorCustomizations": {
-        "notebook.cellBorderColor":"#FFd000",
-        "notebook.cellHoverBackground": "#1c2b34",
-        "notebook.focusedCellBackground": "#26444a",
-        "[Cobalt Next Dark]": {
-          // highlight 5fb3b3 4e9b9b
-          // "foreground": "#0048ff"
-          // "editor.background": "#1b2b34",
-          // "sideBar.background": "#0f1c23",
-          "tab.activeBorder":             "#5fb3b3",
-          "editor.background":            "#222c34",
-          "activityBar.activeBackground":     "#0f1c23",
-          "input.background":                 "#0f1c23",
-          "statusBar.background":             "#0f1c23",
-          "tab.activeBackground":             "#0f1c23",
-          "editorGutter.background":          "#0f1c23",
-          "activityBar.background":               "#1b2b34",
-          "titleBar.activeBackground":        "#0f1c23",
-          // "scrollbarSlider.background":       "#0f1c23aa",
-          "scrollbar.shadow": "#00000000",
-          "scrollbarSlider.background":       "#5fb3b333",
-          "scrollbarSlider.hoverBackground":  "#5fb3b344",
-          "scrollbarSlider.activeBackground": "#5fb3b355"
-                 
-          // "editor.inactiveSelectionBackground": "#1494df",
-          // "editor.lineHighlightBackground": "#5fb3b3",
-          // "editor.selectionBackground": "#5fb3b3",
-          
-          
-      }
-    },
-    //================================================[아이콘]
-    "files.exclude": {
-      // "**/__pycache__": true,
-      "**/.git": false
-    },
-
-    "workbench.iconTheme": "vscode-icons",
-    // https://github.com/vscode-icons/vscode-icons/wiki/ListOfFolders
-    "vsicons.associations.folders": [
-      {
-          "icon":"",               // Icon Name . "" : default
-          "extensions":["layout","widgets","component","source"] // Folder Name
-      }
-    ],
-    "vsicons.presets.hideExplorerArrows": true,
-    "workbench.tree.indent": 16,
-    //================================================[터미널]
-    "terminal.external.windowsExec": "wt",              //window terminal
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-
-    //================================================[파이썬]
-    "terminal.integrated.env.windows": {"PYTHONPATH":"${workspaceFolder}"}, //Run Python File : sys.path
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
-    "jupyter.askForKernelRestart": false,
-    "python.terminal.executeInFileDir": false,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-
-    //================================================[편집창]
-    "editor.showFoldingControls": "always",
-    "editor.minimap.enabled": false,
-    "glassit.step": 2,          // requires GlassIt-VSC
-    "glassit.alpha": 255,
-    "vsicons.dontShowNewVersionMessage": true,
-    "security.workspace.trust.untrustedFiles": "open",
-
-    "editor.parameterHints.enabled": false, // no hint
-
-    "[python]": {
-        // "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true
-        // "editor.detectIndentation": false,
-
-    },
-
-    "autoDocstring.docstringFormat": "sphinx-notypes",
-    "comment-divider.shouldLengthIncludeIndent": true,
-    "editor.tokenColorCustomizations": {"comments": "#8899a6"}, // comennt 8899a6
+  //================================================[폰트]
+  "editor.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  //================================================[테마]
   
-    //================================================[텝]
-    "workbench.editor.pinnedTabsOnSeparateRow": true,
-    "window.density.editorTabHeight": "compact",
-    "workbench.editor.wrapTabs": true,
-    // dark   #576775
-    // gray   #9fb2c2
-    // white  #fdfffd
+  // "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  // "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Cobalt Next Dark",
+  "editor.bracketPairColorization.enabled": true, // Native bracket matching - colors included in theme
+  "color-highlight.markerType": "underline",      // requires Color Highlight Extension
+  "color-highlight.markRuler": false,             // requires Color Highlight Extension
+  "editor.colorDecorators": false,                // using Color Hightlight instead
+  "editor.cursorBlinking": "solid",
+  "editor.cursorWidth": 4,
+  "editor.letterSpacing": 0.0,
+  // editor.lineHeight": 20,
+  //"editor.fontSize": 18,
 
-    // red    #ff828a
-    // orange #ffad7d
-    // yellow #ffdd8a
-    // green  #c7f7ca
-    // blue   #94cbfa
-    // navy   #8fe8e9
-    // purple #f1c4f5
-    //================================================[better comments]
-    "better-comments.tags": [
-        {
-          "tag": "?",
-          "color": "#63b4b3",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "#313e47",
-          "bold": false,
-          "italic": true
-        },
-        {
-          "tag": "!",
-          "color": "#ff828a",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
-        },
-        {
-          "tag": "@",
-          "color": "#ffad7d",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
-        },
-        {
-          "tag": "$",
-          "color": "#ffdd8a",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
-        },
-        {
-          "tag": "%",
-          "color": "#c7f7ca",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
-        },
-        {
-          "tag": "^",
-          "color": "#94cbfa",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
-        },
-        {
-          "tag": "confirm",
-          "color": "#8fe8e9",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
-        },
-        {
-          "tag": "*",
-          "color": "#f1c4f5",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
-        },
-        {
-          "tag": "//",
-          "color": "#9fb2c2",
-          "strikethrough": true,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
-        }
-      ],
-      "git.openRepositoryInParentFolders": "never",
-      "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
-      "editor.matchBrackets": "never",
-      "window.zoomLevel": -1
+  // "files.trimTrailingWhitespace": true, // trim < markdown
+
+  "subtleBrackets.style": { // requires Subtle Match Bracket Extension
+    "global": {
+      "borderColor": "#fac863",
+      "borderWidth": "2px"
+    }
+  },
+  // https://code.visualstudio.com/api/references/theme-color#notebook-colors
+  "workbench.colorCustomizations": {
+      "notebook.cellBorderColor":"#FFd000",
+      "notebook.cellHoverBackground": "#1c2b34",
+      "notebook.focusedCellBackground": "#26444a",
+      "[Cobalt Next Dark]": {
+        // highlight 5fb3b3 4e9b9b
+        // "foreground": "#0048ff"
+        // "sideBar.background": "#0f1c23",
+
+        "titleBar.activeBackground":        "#27454a",
+        "titleBar.inactiveBackground":      "#0f1c23",
+
+        "tab.activeBorder":               "#5fb3b3",
+        "tab.activeBorderTop":           "#5fb3b3",
+
+        "tab.border": "#5fb3b322",
+        "editor.background":            "#222c34",
+        "activityBar.activeBackground":     "#0f1c23",
+        "input.background":                 "#0f1c23",
+        "statusBar.background":             "#0f1c23",
+        "tab.activeBackground":             "#0f1c23",
+        "editorGutter.background":          "#0f1c23",
+        "activityBar.background":               "#1b2b34",
+        // "scrollbarSlider.background":       "#0f1c23aa",
+        "scrollbar.shadow": "#00000000",
+        "scrollbarSlider.background":       "#5fb3b333",
+        "scrollbarSlider.hoverBackground":  "#5fb3b344",
+        "scrollbarSlider.activeBackground": "#5fb3b355",   
+               
+        // "editor.inactiveSelectionBackground": "#1494df",
+        // "editor.lineHighlightBackground": "#5fb3b3",
+        // "editor.selectionBackground": "#5fb3b3",
+        
+        
+    }
+  },
+  //================================================[아이콘]
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.git": false
+  },
+
+  "workbench.iconTheme": "vscode-icons",
+  // https://github.com/vscode-icons/vscode-icons/wiki/ListOfFolders
+  "vsicons.associations.folders": [
+    {
+        "icon":"",               // Icon Name . "" : default
+        "extensions":["layout","widgets","component","source"], // Folder Name
+    }
+  ],
+  "vsicons.presets.hideExplorerArrows": true,
+  "workbench.tree.indent": 16,
+  //================================================[터미널]
+  "terminal.external.windowsExec": "wt",              //window terminal
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  //================================================[파이썬]
+  "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+  },
+  "terminal.integrated.env.windows": {"PYTHONPATH":"${workspaceFolder}"},
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "jupyter.askForKernelRestart": false,
+  "python.terminal.executeInFileDir": false,
+  "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+  },
+
+  //================================================[편집창]
+  "editor.showFoldingControls": "always",
+  "editor.minimap.enabled": false,
+  "glassit.step": 2,          // requires GlassIt-VSC
+  "glassit.alpha": 255,
+  "vsicons.dontShowNewVersionMessage": true,
+  "security.workspace.trust.untrustedFiles": "open",
+
+  "editor.parameterHints.enabled": false, // no hint
+
+  "[python]": {
+      // "editor.formatOnType": true,
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      // "editor.detectIndentation": false,
+
+  },
+
+  "autoDocstring.docstringFormat": "sphinx-notypes",
+  "comment-divider.shouldLengthIncludeIndent": true,
+  "editor.tokenColorCustomizations": {"comments": "#8899a6"}, // comennt 8899a6
+
+  //================================================[텝]
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "window.density.editorTabHeight": "compact",
+  "workbench.editor.wrapTabs": true,
+  // dark   #576775
+  // gray   #9fb2c2
+  // white  #fdfffd
+
+  // red    #ff828a
+  // orange #ffad7d
+  // yellow #ffdd8a
+  // green  #c7f7ca
+  // blue   #94cbfa
+  // navy   #8fe8e9
+  // purple #f1c4f5
+  //================================================[better comments]
+  "better-comments.tags": [
+      {
+        "tag": "?",
+        "color": "#63b4b3",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "#313e47",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "tag": "!",
+        "color": "#ff828a",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "@",
+        "color": "#ffad7d",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "$",
+        "color": "#ffdd8a",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "%",
+        "color": "#c7f7ca",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "^",
+        "color": "#94cbfa",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "confirm",
+        "color": "#8fe8e9",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "*",
+        "color": "#f1c4f5",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "//",
+        "color": "#9fb2c2",
+        "strikethrough": true,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+    ],
+    "git.openRepositoryInParentFolders": "never",
+    "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
+    "editor.matchBrackets": "never",
+    "window.zoomLevel": -1,
+
+
 }
 // bg = "#1b2b34"
 // black = "#0f1c23"
